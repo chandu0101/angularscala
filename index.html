@@ -11,8 +11,8 @@
 <ul class="list-group">
     <li class="list-group-item" ng-repeat="product in products | orderBy:price ">
         <h3>
-            {{product.name}}
-            <em class="pull-right">{{product.price | currency}}</em>
+            <product-title></product-title>
+            <!--<span ng-include="'product-title.html'"></span>-->
         </h3>
         <img class="center-block" ng-src="images/{{product.images.u[0]}}"/>
         <section ng-controller="panelCtrl">
